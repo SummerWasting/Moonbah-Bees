@@ -1,0 +1,877 @@
+
+/*
+Project Name: Moonbah Bees
+Author: Oscar Selden
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+
+
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+
+
+
+@font-face {
+	font-family: 'Caferus Regular';
+	src: url('Moonbah Fonts/Caferus Regular.ttf') format('truetype');
+	font-weight: normal;
+  	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Amelian Script';
+	src: url('Moonbah Fonts/Amelian Script.ttf') format('truetype');
+	font-weight: normal;
+  	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Caferus Basic';
+	src: url('Moonbah Fonts/Caferus Basic.ttf') format('truetype');
+	font-weight: normal;
+  	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Caferus Inline';
+	src: url('Moonbah Fonts/Caferus Inline.ttf') format('truetype');
+	font-weight: normal;
+  	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Caferus Shadow';
+	src: url('Moonbah Fonts/Caferus Shadow.ttf') format('truetype');
+	font-weight: normal;
+  	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Caferus Slim';
+	src: url('Moonbah Fonts/Caferus Slim.ttf') format('truetype');
+	font-weight: normal;
+  	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Isabella Script';
+	src: url('Moonbah Fonts/Isabella Script.ttf') format('truetype');
+	font-weight: normal;
+  	font-style: normal;
+
+  	}
+
+ 
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/*All Pages*/
+
+
+#bee-header {
+
+	height: 100%;
+	width: 100%;
+	background-color: #ffc20e;
+
+	
+}
+
+#elevation {
+
+	font-size: 11px;
+	font-weight: bold;
+	letter-spacing: 0.7em;
+	text-align: right;
+	background-color: #ffc20e;
+	padding-bottom: 10px;
+	width: 100%;
+
+}
+
+
+.btn {
+
+	
+	position: relative;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: black;
+    font-size: 15px;
+    font-family: 'Caferus Slim';
+    padding: 12px 24px;
+   	line-height: 10px;
+    border: solid thin black;
+    cursor: pointer;
+    border-radius: 70px;
+	background-color: #ffde5f;
+	width: 15%;
+  	height: 34px;
+  	top: 25px;
+  	z-index: 2;
+
+
+
+}
+
+
+
+
+.btn:hover {
+
+	color: #ffffff;
+	background-color: black;
+	opacity: 1;
+    transform: scale (1.1, 1.1);
+}
+
+
+
+#btn1{
+	
+  	left: 10%;
+}
+
+#btn2{
+	
+  	left: 15%;
+}
+
+#btn3{
+	
+  	left: 20%;
+
+}
+
+#btn4{
+
+  left: 25%;
+
+}
+
+#btn5{
+	
+  	left: 30%;
+
+}
+
+
+/*Footer*/    
+
+
+
+#footer {
+  text-align: center;
+  background-color: #292929;
+  
+ 
+
+}
+
+.footerText {
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+#address {
+
+	color: #ffffff;
+	font-family: 'Caferus Slim';
+	font-size: 16px;
+	
+
+
+}
+
+#copyright {
+	color: #ffffff;
+	font-size: 14px;
+	font-family: 'Caferus Slim';
+	
+
+}
+
+
+/*Home Page*/
+
+#bee-background {
+   
+  	margin-top: -44px;
+  	margin-bottom: -10px;
+    max-width: 100%; 
+    height: auto;
+    padding-left: 15px;
+	
+
+ }
+
+  /*Galleries*/
+
+ #galleriesButtons {
+
+ 	height: 100%;
+ }
+
+  /*Videos*/
+
+ #videosButtons {
+
+ 	height: 100%;
+ }
+
+  /*Produce*/
+
+ #produceButtons {
+
+ 	height: 100%;
+ }
+
+ /*About*/
+
+ #aboutButtons {
+
+ 	height: 100%;
+ 	margin-bottom: 60px;
+ }
+
+ #aboutItems {
+ 	height: 100%;
+ 	text-align: center;
+ 	width: 100%;
+ 	vertical-align: middle;
+ }
+
+ /*About Row 1*/
+
+
+
+ #sueMonk {
+ 	color: #606da9;
+ 	font-family: 'Caferus Regular';
+ 	font-size: 1em;
+
+ }
+
+ #sueMonkName {
+ 	color: #ffde5f;
+ 	font-family: 'Caferus Regular';
+ 	font-size: 1em;
+ }
+
+#ogden {
+
+	color: #ffde5f;
+	font-family: 'Isabella Script';
+	font-size: 2em;
+
+}
+
+#ogdenName {
+
+	color: #605e77;
+	font-family: 'Isabella Script';
+	font-size: 1.6em;
+
+}
+
+#beeStanding {
+
+	height: 200px;
+	
+}
+
+
+#royal{
+	font-family: 'Caferus Slim';
+	font-size: 1em;
+
+
+}
+
+#royalName{
+		font-family: 'Caferus Slim';
+		color: #ffde5f;
+}
+
+
+ /*About Row 2*/
+
+
+#reflection {
+	position: relative;
+	top: 100px;
+	width: 80%;
+ 
+}
+
+#brackney {
+	font-family: 'Caferus Regular';
+	font-size: 1.2em;
+	color: black;
+	
+	
+
+}
+
+#brackneyName {
+
+font-family: 'Caferus Regular';
+font-size: 1em;
+color: #606da9;
+
+
+
+
+}
+
+
+.honeyValley {
+
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Caferus Normal';
+    font-size: 1.2em;
+}
+
+#mayne {	
+
+	position: relative;
+	top: 100px;
+}
+
+
+#buzz{
+		
+		font-family: 'Caferus Slim';
+		font-size: 1.3em;
+		color: black;
+	
+}
+
+#buzzName {
+
+		font-family: 'Caferus Slim';
+		font-size: 1em;
+		color: #606da9;
+}
+
+/*About Row 3*/
+
+
+#friend {
+
+		position: relative;
+		top: 50px;
+		z-index: 2;
+}
+
+#milne {
+		
+		font-family: 'Caferus Slim';
+		font-size: 1.3em;
+		color: black;
+		width: 80%;
+
+		font-style: bold;
+	
+
+}
+
+#milneName{
+
+		font-family: 'Caferus Slim';
+		font-size: 1em;
+		color: #606da9;
+		width: 80%;
+		top: 50px;
+		margin: 15px;
+		font-style: bold;
+	
+}
+
+#world {
+
+	position: relative;
+	top: 50px;
+
+}
+
+#ebben{
+
+	font-family: 'Caferus Slim';
+	font-size: 1em;
+	width: 80%;
+	color: #606da9;
+}
+
+
+#ebbenName{
+
+		font-family: 'Caferus Slim';
+		font-size: 1em;
+		color: #606da9;
+		width: 80%;
+
+		}
+
+#smell {
+
+z-index: 2;
+
+}
+
+#bradbury{
+
+	font-family: 'Caferus Slim';
+	font-size: 1em;
+	width: 60%;
+
+}
+
+#bradburyName{
+
+
+		font-family: 'Caferus Slim';
+		font-size: 1em;
+		color: #606da9;
+}
+
+
+
+
+/*Produce*/
+
+#purchase {
+
+	margin-top: 20px;
+}
+
+#greetingCard {
+
+	height: 400px;
+	object-fit: cover;
+
+}
+
+
+#honeyPile {
+
+height: 400px;
+object-fit: cover;
+
+}
+
+
+#swingTags {
+ text-align: center;
+ font-family: 'Caferus Slim';
+	
+}
+
+
+#medal {
+
+	border-radius: 50%;
+	object-fit: cover;
+	height: 190px;
+	width: 204px;
+	border: 10px;
+	box-shadow: 0px 0px 0px 7px #fff;
+	margin-top: -150px;
+	padding: 0px;
+	
+}
+
+#coldPressed {
+	text-align: center;
+	font-family: 'Caferus Slim';
+}
+
+#buyBtn {
+
+	
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: black;
+    font-size: 15px;
+    font-family: 'Caferus Slim';
+    border: solid thin black;
+    cursor: pointer;
+    border-radius: 70px;
+	background-color: #ffde5f;
+	width: 15%;
+  	height: 34px;
+  	display: block;
+ 	float: left;
+ 	margin-left: 240px;
+ 	margin-top: 10px;
+ 	padding: 5px;
+
+
+
+}
+
+#buyBtn2 {
+
+	
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: black;
+    font-size: 15px;
+    font-family: 'Caferus Slim';
+    border: solid thin black;
+    cursor: pointer;
+    border-radius: 70px;
+	background-color: #ffde5f;
+	width: 15%;
+  	height: 34px;
+  	display: block;
+ 	float: right;
+ 	margin-right: 100px;
+ 	margin-top: 10px;
+ 	padding: 5px;
+
+
+
+}
+
+
+
+
+#honeycombSepia {
+
+	width: 90%;
+	height: 180px;
+	margin-bottom: 15px;
+	margin-top: 10px;
+	object-fit: cover;
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+
+
+
+}
+
+/*Videos*/
+
+
+#blackBackground {
+
+background-color: #000000;
+width: 100%;
+
+	
+}
+
+
+#videos {
+
+	text-align: center;
+	background-color: #232323;
+	padding: 20px;
+	width: 80%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+
+}
+
+.washBorder {
+
+	border: 5px solid #ffffff;
+	margin: 20px;
+}
+
+#whiteComb {
+
+	z-index: 2;
+	position: relative;
+	right: 270px;
+	bottom: 150px;
+	height: auto;
+	width: 20%;
+
+}
+
+#swarmVid {
+
+
+position: relative;
+bottom: 150px;
+}
+
+/*Gallery*/
+
+.honeyPhotos {
+  border: 2px solid black;
+  margin-bottom: 10px;
+  margin-top: 30px;
+
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+
+#buyBtn {
+
+	 margin-left:  200px;
+}
+
+#buyBtn2 {
+
+
+	margin-right:  60px;
+
+}
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1000px) {
+
+}
+
+
+@media only screen and (max-width : 997px) {
+
+#medal {
+
+	display: none;
+}
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+
+
+#reflection {
+	position: relative;
+	top: 10px;
+	left: 10%;
+	width: 80%;
+ 
+}
+
+#mayne {	
+
+	position: relative;
+	top: 50px;
+}
+
+#friend {
+
+		position: relative;
+		top: 60px;
+		z-index: 2;
+		margin: 15px;
+}
+
+#world {
+
+
+		z-index: 2;
+		position: relative;
+		top: 60px;
+		margin: 15px;
+		
+
+}
+
+#smell{
+	position: relative;
+		top: 60px;
+		margin: 15px;
+}
+
+#smoker {
+
+	position: relative;
+	top: -40px;
+}
+
+#sorrow {
+	
+	position: relative;
+	top: -30px;
+	z-index: 2;
+	left: 10%;
+	font-size: 0.8em;
+
+}
+
+#swarmVid {
+
+
+position: relative;
+bottom: 80px;
+}
+
+.honeyPhotos {
+
+	width: 150px;
+}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 892px) {
+
+#whiteComb {
+
+	right: 150px;
+	bottom: 150px;
+
+
+
+}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+#swarmVid {
+
+
+position: relative;
+bottom: 60px;
+}
+
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 630px) {
+
+
+
+	#bee-background {
+
+		display: none;
+
+
+	}
+
+	#greetingCard {
+
+	height: auto;
+
+}
+
+
+#honeyPile {
+
+height: auto;
+
+}
+
+#buttonContainer{
+
+	background-image: url(../images/BeesonframeColour.jpg);
+	height: 600px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -10px;
+	margin-right: -15px;
+	
+}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 542px) {
+
+
+
+.btn {
+		font-size: 10px;
+		padding: 0px;
+		
+	}
+
+
+#swarmVid {
+
+
+position: relative;
+bottom: 50px;
+}
+
+
+#buyBtn {
+
+	font-size: 10px;
+}
+
+#buyBtn2 {
+
+	font-size: 10px;
+	
+}
+
+
+}
+
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+
+		.btn {
+	
+		font-size: 10px;
+		padding: 0px;
+
+	}
+
+	#whiteComb {
+
+	right: 100px;
+	bottom: 100px;
+	
+}
+
+#buyBtn2 {
+
+	display: none;
+	
+}
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+	.honeyValley {
+
+		font-size: 1em;
+	}
+
+    
+}
