@@ -1,7 +1,16 @@
-$(document).ready(function() {
-  var icon = $('.play');
-  icon.click(function() {
-     icon.toggleClass('active');
-     return false;
-  });
-});
+var myAudio = document.getElementById("myAudio");
+var isPlaying = false;
+
+function togglePlay() {
+  if (isPlaying) {
+    myAudio.pause()
+  } else {
+    myAudio.play();
+  }
+};
+myAudio.onplaying = function() {
+  isPlaying = true;
+};
+myAudio.onpause = function() {
+  isPlaying = false;
+};
