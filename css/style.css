@@ -880,6 +880,10 @@ bottom: 50px;
 	
 }
 
+ #myAudio {
+ 	display: none;
+ }
+
 }
 
 /* Custom, iPhone Retina */ 
